@@ -114,7 +114,7 @@ while ($true) {
                 [System.Windows.Forms.SendKeys]::SendWait("{ENTER}")
 
                 Write-Host "WhatsApp message sent to $recipient."
-                $player.Open("C:\Users\asher\Downloads\hailingfrequencies_open3.mp3")
+                # $player.Open("Insert mp3 filepath here")
                 $player.Play()
                 continue
             }
@@ -135,7 +135,7 @@ if ($app -eq "outlook") {
     Start-Process $mailto
 
     Write-Host "Outlook compose window opened for $recipient."
-    $player.Open("C:\Users\asher\Downloads\hailingfrequencies_open3.mp3")
+    # $player.Open$player.Open("Insert mp3 filepath here")
     $player.Play()
     continue
 }
@@ -176,7 +176,7 @@ if ($app -eq "outlook") {
         ".*(code zero zero zero destruct zero|code 000 destruct 0|destruct zero).*" {
             if ($global:destructStage -eq 3) {
                 Write-Host "Final Destruct Authorization accepted."
-                $player.Open("C:\Users\asher\Downloads\autodestructsequencearmed_ep.mp3")
+                 # $player.Open("Insert mp3 filepath here")
                 $player.Play()
                 $global:destructStage = 0
             } else {
@@ -186,55 +186,55 @@ if ($app -eq "outlook") {
 
         ".*(code 123 continuity abort destruct order).*" {
             Write-Host "Abort command detected."
-            $player.Open("C:\Users\asher\Downloads\selfdestructsequenceterminated_ep.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(warp (one|1|won)|warp (two|2|to|too)|warp (three|3)|warp (four|4|for)|warp (five|5)|warp (six|6)|warp (seven|7)|warp (eight|8|ate)|warp (nine|9)|warp speed|engage warp).*" {
             Write-Host "Warp command detected."
-            $player.Open("C:\Users\asher\Downloads\tng_warp2_clean.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(shields up|raise shields).*" {
             Write-Host "Shields up."
-            $player.Open("C:\Users\asher\Downloads\shields.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(fire phasers).*" {
             Write-Host "Phasers firing."
-            $player.Open("C:\Users\asher\Downloads\tng_phaser5_clean.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(fire torpedos |fire photon torpedos).*" {
             Write-Host "Torpedos away."
-            $player.Open("C:\Users\asher\Downloads\tng_torpedo2_clean.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(red alert|computer, red alert|initiate red alert|battle stations|condition red).*" {
             Write-Host "Red alert command detected."
-            $player.Open("C:\Users\asher\Downloads\tng_red_alert1.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(take us out|ahead full|ahead one quarter impulse|take her out).*" {
             Write-Host "Departure command detected."
-            $player.Open("C:\Users\asher\OneDrive\Documents\Leaving-Drydock.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(intro|space, the final frontier|computer, play intro).*" {
             Write-Host "Intro command detected."
-            $player.Open("C:\Users\asher\Downloads\TNG opening.mp3")
+            # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
         ".*(alt intro|space, the final conquest|computer, play alt intro).*" {
             Write-Host "Alt Intro command detected."
-            $player.Open("C:\Users\asher\iCloudDrive\Downloads\Star Trek Main Theme - From Star Trek Continues The Fairest of Them All.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
         }
 
@@ -242,7 +242,7 @@ if ($app -eq "outlook") {
         ".*(news headlines|top headlines|summarize headlines|summarize news|headlines).*" {
 
             Write-Host "Accessing current news headlines from NYPost U.S. News and Yeshiva World News..."
-            $player.Open("C:\Users\asher\Downloads\accessinglibrarycomputerdata_clean.mp3")
+            # $player.Open("Insert mp3 filepath here")
             $player.Play()
 
             $headlines = @()
@@ -299,7 +299,7 @@ if ($app -eq "outlook") {
 
             $headlineText = ($headlines -join "`n")
 
-            $player.Open("C:\Users\asher\Downloads\hail_allship_ep.mp3")
+             # $player.Open("Insert mp3 filepath here")
             $player.Play()
 
             Write-Host "`n--- M-5 News ---"
@@ -320,12 +320,12 @@ if ($app -eq "outlook") {
                 }
 
                 Write-Host "Accessing Library Computer Data..."
-                $player.Open("C:\Users\asher\Downloads\accessinglibrarycomputerdata_clean.mp3")
+                 # $player.Open("Insert mp3 filepath here")
                 $player.Play()
 
                 $response = ollama run phi3:mini "$prompt"
 
-                $player.Open("C:\Users\asher\Downloads\programinitiatedenterwhenready_ep.mp3")
+                 # $player.Open("Insert mp3 filepath here")
                 $player.Play()
 
                 Write-Host "`n--- Library Computer Response ---"
